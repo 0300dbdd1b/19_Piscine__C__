@@ -1,3 +1,3 @@
 #!/bin/bash
-git check-ignore *
+git ls-files --exclude-standard -i -o
 

@@ -6,7 +6,7 @@
 /*   By: naddino <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/12 16:47:09 by naddino           #+#    #+#             */
-/*   Updated: 2019/11/12 21:42:12 by naddino          ###   ########.fr       */
+/*   Updated: 2019/11/13 18:36:26 by naddino          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,30 +35,35 @@ int		ft_check_base(char *base)
 	int i;
 
 	i = 0;
-	x = 0;
-	if (ft_strlen(base) <= 1)
+	if (!base || !base[0] || !base[1])
 		return (0);
-	while (base[x])
+	while (base[i + 1])
 	{
-		i = x + 1;
-		while (base[i])
+		x = i + 1;
+		while (base[x])
 		{
-			if (base[x] == base[i] || base[x] == '+' || base[x] == '-'
-					|| base[x] < 33 | base[x] == 127)
+			if (base[i] == base[x])
 				return (0);
-			i++;
+			x++;
 		}
-		x++;
+		i++;
 	}
-	return (1);
+	i = 0;
+	while (base[i])
+	{
+		if (base[i] == '-' || base[i] == '+')
+			return (0);
+		i++;
+	}
+	return (x);
 }
 
 void	ft_putnbr_base(int nbr, char *base)
 {
-	long i;
+	long int	i;
 
 	i = nbr;
-	if (ft_check_base(base) == 1)
+	if (ft_check_base(base) != 0)
 	{
 		if (i < 0)
 		{
@@ -71,6 +76,6 @@ void	ft_putnbr_base(int nbr, char *base)
 			ft_putnbr_base(i % ft_strlen(base), base);
 		}
 		else
-			ft_putchar(base[i]);
+			ft_putchar(base[i % ft_strlen(base)]);
 	}
 }

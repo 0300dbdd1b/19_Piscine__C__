@@ -1,3 +1,1 @@
-#!/bin/bash
-git log -5 --pretty=format:%H
-echo
+git rev-list -n 5 HEAD
