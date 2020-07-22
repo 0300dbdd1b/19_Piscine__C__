@@ -3,8 +3,8 @@ Subjects &amp; Solutions of 42 Network Piscine C
 ## Status
 
 ### Subjects
-```diff
-- [Shell00](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/Shell00.pdf)
+
+[Shell00](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/Shell00.pdf)
 [Shell01](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/Shell01.pdf)
 [C_00](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/C_00.pdf)
 [C_01](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/C_01.pdf)
@@ -20,4 +20,3 @@ Subjects &amp; Solutions of 42 Network Piscine C
 [C_11](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/C_11.pdf)
 [C_12](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/C_12.pdf)
 [C_13](https://github.com/Marcaday/19_Piscine__C__/blob/master/PDF/C_13.pdf)
-```
